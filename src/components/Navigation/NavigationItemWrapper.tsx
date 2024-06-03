@@ -5,7 +5,9 @@ export default function NavigationItemWrapper() {
   return (
     <ul className="flex items-center justify-evenly">
       <NavigationItems />
-      <BookingButton />
+      <li>
+        <BookingButton />
+      </li>
     </ul>
   );
 }
