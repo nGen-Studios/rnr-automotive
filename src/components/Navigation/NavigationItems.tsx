@@ -1,7 +1,13 @@
 import { navigationData } from "./navigationData";
+import Link from "next/link";
 
 export default function NavigationItems() {
   return navigationData.map((nav) => (
-    <li className="inline items-center mr-6">{nav.name}</li>
+    <Link
+      href={nav.href}
+      className="inline items-center mr-6 text-xl hover:scale-110"
+    >
+      {nav.name}
+    </Link>
   ));
 }
