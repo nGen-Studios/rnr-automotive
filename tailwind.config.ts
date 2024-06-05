@@ -10,12 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         secondary: "#F70D0D",
+        // secondary: "#880808",
+        // secondary: "#800020",
+        // secondary: "#880808",
         primary: "#C8C5C5",
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        desktop: { max: "1600px" },
+        laptop: { max: "1440px" },
+        tablet: { max: "1100px" },
+        mobile: { max: "640px" },
       },
     },
   },

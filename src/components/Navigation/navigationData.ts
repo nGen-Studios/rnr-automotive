@@ -1,6 +1,6 @@
 export const navigationData = [
-  { name: "Home" },
-  { name: "What we do" },
-  { name: "Services" },
-  { name: "Contact us" },
+  { name: "Home", href: "/" },
+  { name: "What we do", href: "#whatwedo" },
+  { name: "Services", href: "#services" },
+  { name: "Contact us", href: "/contact-us" },
 ];
