@@ -10,10 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         secondary: "#F70D0D",
-        // secondary: "#880808",
-        // secondary: "#800020",
-        // secondary: "#880808",
-        primary: "#C8C5C5",
+        primary: "#959494",
       },
       screens: {
         desktop: { max: "1600px" },
