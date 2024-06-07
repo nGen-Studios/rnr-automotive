@@ -11,7 +11,6 @@ const config: Config = {
       colors: {
         secondary: "#F70D0D",
         primary: "#959494",
-        transparent: "rgba(255, 255, 255, 0.8)",
       },
       screens: {
         desktop: { max: "1600px" },
@@ -24,5 +23,3 @@ const config: Config = {
   plugins: [],
 };
 export default config;
-
-//#F70D0D

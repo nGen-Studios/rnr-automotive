@@ -19,7 +19,7 @@ export default function HeroSection() {
         alt="A car being serviced"
       />
 
-      <div className="absolute font-extrabold bg-transparent top-32 left-1/2 translate-x-[-50%] rounded-md text-secondary text-8xl tracking-tighter px-5 py-2 flex laptop:text-7xl tablet:text-6xl tablet:w-[29rem] mobile:text-4xl mobile:w-[19rem] ">
+      <div className="absolute font-extrabold bg-white/[0.8] top-32 left-1/2 translate-x-[-50%] rounded-md text-secondary text-8xl tracking-tighter px-5 py-2 flex laptop:text-7xl tablet:text-6xl tablet:w-[29rem] mobile:text-4xl mobile:w-[19rem] ">
         <div className="scale-x-[-1] mr-[-3px]">R</div>nR automotive
       </div>
     </section>
