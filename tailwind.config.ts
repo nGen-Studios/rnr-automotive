@@ -10,7 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         secondary: "#F70D0D",
-        primary: "#959494",
+        primary: "#c8c6c6",
+      },
+      fontFamily: {
+        customFont: ["var(--customFont)", "cursive"],
       },
       screens: {
         desktop: { max: "1600px" },
