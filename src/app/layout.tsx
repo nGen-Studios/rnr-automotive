@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation/Navigation";
 import "./globals.css";
 
 const inter = localFont({
-  src: "../public/assets/fonts/GummyBear.ttf",
+  src: "../public/assets/fonts/Bubblegum.ttf",
   variable: "--customFont",
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.variable}>
+      <body className={`font-customFont ${inter.variable}`}>
         <Navigation />
         {children}
       </body>
