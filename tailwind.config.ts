@@ -12,6 +12,9 @@ const config: Config = {
         secondary: "#F70D0D",
         primary: "#c8c6c6",
       },
+      fontFamily: {
+        customFont: ["var(--customFont)", "cursive"],
+      },
       screens: {
         desktop: { max: "1600px" },
         laptop: { max: "1440px" },
