@@ -7,8 +7,8 @@ export default function ColumnItem() {
   return (
     <>
       {columns.map((column) => (
-        <div className="flex flex-col items-center justify-center pb-10 border-secondary border-4 w-full overflow-hidden rounded-3xl shadow-xl">
-          <h3 className="text-white text-center w-full bg-secondary text-3xl p-1">
+        <div className="flex flex-col items-center justify-center pb-10 border-secondary border-4 w-full overflow-hidden rounded-3xl shadow-xl max-w-[620px]">
+          <h3 className="text-white text-center w-full bg-secondary text-3xl p-1 tablet:text-4xl tablet:py-5 ">
             {column.name}
           </h3>
           <div className="w-full h-full bg-gray-50 flex items-center justify-center mb-10">
@@ -20,12 +20,12 @@ export default function ColumnItem() {
               height={180}
             />
           </div>
-          <ul className="w-full pl-10 pb-3 text-xl">
-            {column.lists.map((list) => (
-              <li>{list}</li>
+          <ul className="w-full pl-10 pb-3 text-xl tablet:text-3xl mobile:text-xl">
+            {column.lists.map((list, index) => (
+              <li key={index}>{list}</li>
             ))}
           </ul>
-          <BookingButton className="mr-0 mt-5" />
+          <BookingButton className="mr-0 mt-5 tablet:text-3xl tablet:p-5 mobile:text-xl" />
         </div>
       ))}
     </>
