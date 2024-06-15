@@ -2,7 +2,7 @@ import car from "@/public/icons/car-side.png";
 import bakkie from "@/public/icons/truck-pickup.png";
 import truck from "@/public/icons/truck-flatbed.png";
 
-export const columns = [
+export const serviceItemData = [
   {
     name: "Cars",
     image: car,
