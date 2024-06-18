@@ -10,6 +10,7 @@ export default function NavigationItems({
     <>
       {navigationData.map((nav) => (
         <Link
+          key={nav.name}
           href={nav.href}
           className={twMerge(
             "inline items-center mr-6 text-xl hover:scale-110",
