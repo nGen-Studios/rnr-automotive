@@ -6,8 +6,11 @@ import BookingButton from "../Navigation/BookingButton";
 export default function ServiceItems() {
   return (
     <>
-      {serviceItemData.map((serviceItem) => (
-        <div className="flex flex-col items-center justify-center pb-10 border-secondary border-4 w-full overflow-hidden rounded-3xl shadow-xl max-w-[620px]">
+      {serviceItemData.map((serviceItem, index) => (
+        <div
+          key={index}
+          className="flex flex-col items-center justify-center pb-10 border-secondary border-4 w-full overflow-hidden rounded-3xl shadow-xl max-w-[620px]"
+        >
           <h3 className="text-white text-center w-full bg-secondary text-3xl p-1 tablet:text-4xl tablet:py-5 ">
             {serviceItem.name}
           </h3>
