@@ -8,7 +8,9 @@ export default function ReviewSection() {
   return (
     <section className="mb-12">
       <h1 className="text-center text-4xl mb-2">Reviews</h1>
-      <p className="text-center text-xl mb-5">Satisfied clients</p>
+      <p className="text-center text-2xl mb-5 laptop:text-2xl tablet:text-2xl">
+        Satisfied clients
+      </p>
       <div className="flex items-center justify-center mb-5">
         <button className="hover:scale-110">
           <Image
@@ -19,9 +21,9 @@ export default function ReviewSection() {
             height={50}
           />
         </button>
-        <div className="bg-primary w-1/2 h-32 ">
+        <div className="bg-primary w-2/3 h-auto">
           <StarRating />
-          <p className="text-center text-xl">
+          <p className="text-center text-xl text-wrap px-10 pb-7 laptop:text-2xl tablet:text-xl mobile:text-lg">
             {reviewSectionData[0].review} -{reviewSectionData[0].name}
           </p>
         </div>
