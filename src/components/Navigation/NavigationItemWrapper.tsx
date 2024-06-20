@@ -9,7 +9,7 @@ export default function NavigationItemWrapper() {
         <BookingButton />
       </li>
       <li>
-        <button className="tablet:block hidden cursor-pointer tablet:mr-16 mobile:mr-4">
+        <button className="tablet:block hidden cursor-pointer tablet:mr-10 mobile:mr-4">
           <span className="h-[3px] w-8 bg-black block" />
           <span className="h-[3px] w-8 bg-black block my-2" />
           <span className="h-[3px] w-8 bg-black block" />
