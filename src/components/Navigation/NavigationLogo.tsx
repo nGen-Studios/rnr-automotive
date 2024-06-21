@@ -1,7 +1,14 @@
+import Image from "next/image";
+import logo from "@/public/logo/logo.png";
+
 export default function NavigationLogo() {
   return (
-    <h1 className="ml-32 text-3xl tablet:ml-16 mobile:ml-4 mobile:text-2xl">
-      LOGO
-    </h1>
+    <Image
+      className="ml-12 tablet:ml-12 mobile:ml-5"
+      src={logo}
+      alt="website logo"
+      width={110}
+      height={110}
+    />
   );
 }

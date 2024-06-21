@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Navigation from "@/components/Navigation/Navigation";
 
 import "./globals.css";
+import Footer from "@/components/Footer/footer";
 
 const inter = localFont({
   src: "../public/assets/fonts/Bubblegum.ttf",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`font-customFont ${inter.variable}`}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,9 +1,14 @@
+import Image from "next/image";
+import heading from "@/public/logo/RNR Automotive Logo for website.png";
+
 export default function Introduction() {
   return (
     <section className="mb-20">
-      <div className="text-secondary text-8xl px-5 py-2 flex items-center justify-center laptop:text-7xl tablet:text-6xl  mobile:text-4xl">
-        <div className="scale-x-[-1] mr-[-3px]">R</div>nR automotive
-      </div>
+      <Image
+        className="m-auto w-1/3 h-80 mb-5 tablet:w-1/2 tablet:h-60 mobile:w-2/3 mobile:h-52"
+        src={heading}
+        alt="website logo"
+      />
       <div className="bg-primary w-4/5 h-auto m-auto">
         <p className="py-6 px-10 text-2xl tablet:text-3xl mobile:text-xl">
           RNR was a lifetime dream that became a reality, delivering years of

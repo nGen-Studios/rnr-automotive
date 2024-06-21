@@ -2,6 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 export default function BookingButton({
   className,
+  children,
   ...rest
 }: React.HTMLProps<HTMLButtonElement>) {
   return (
@@ -12,7 +13,7 @@ export default function BookingButton({
         className
       )}
     >
-      BOOK NOW
+      {children ? children : `BOOK NOW`}
     </button>
   );
 }
