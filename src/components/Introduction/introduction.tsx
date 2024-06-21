@@ -5,7 +5,7 @@ export default function Introduction() {
   return (
     <section className="mb-20">
       <Image
-        className="m-auto w-1/3 h-80 mb-5 tablet:w-1/2 tablet:h-60 mobile:w-2/3 mobile:h-52"
+        className="m-auto w-1/3 h-72 mb-5 tablet:w-1/2 tablet:h-60 mobile:w-2/3 mobile:h-52"
         src={heading}
         alt="website logo"
       />
