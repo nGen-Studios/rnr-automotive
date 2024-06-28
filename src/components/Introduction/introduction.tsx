@@ -3,7 +3,7 @@ import heading from "@/public/logo/RNR Automotive Logo for website.png";
 
 export default function Introduction() {
   return (
-    <section className="mb-20">
+    <section id="whatwedo" className="mb-20">
       <Image
         className="m-auto w-1/3 h-72 mb-5 tablet:w-1/2 tablet:h-60 mobile:w-2/3 mobile:h-52"
         src={heading}

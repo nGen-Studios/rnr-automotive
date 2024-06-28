@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { serviceItemData } from "./serviceData";
 import BookingButton from "../Navigation/BookingButton";
@@ -28,7 +29,9 @@ export default function ServiceItems() {
               <li key={index}>{list}</li>
             ))}
           </ul>
-          <BookingButton className="mr-0 mt-5 tablet:text-3xl tablet:p-5 mobile:text-xl" />
+          <Link href="/contact">
+            <BookingButton className="mr-0 mt-5 tablet:text-3xl tablet:p-5 mobile:text-xl" />
+          </Link>
         </div>
       ))}
     </>
