@@ -1,5 +1,5 @@
 "use client";
-import { FormEvent, FormEventHandler, useState } from "react";
+import { FormEvent, useState } from "react";
 import BookingButton from "../Navigation/BookingButton";
 
 export default function Contact() {

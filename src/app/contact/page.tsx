@@ -23,7 +23,7 @@ export default function ContactPage() {
     <section className="w-full h-auto max-w-[1250px] m-auto laptop:max-w-[1100px] tablet:max-w-[900px]">
       {!showTermsPage && !showPrivacyPage && (
         <>
-          <h2 className="mt-32 text-center text-xl mb-2 mobile:p-10 mobile:mt-20 mobile:mb-5">
+          <h2 className="mt-32 text-center text-xl mb-2 mobile:px-10 mobile:py-5 mobile:mt-20 mobile:mb-2">
             To schedule your car for a service, simply send us an email or give
             us a call!
           </h2>
