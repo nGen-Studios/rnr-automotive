@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -16,17 +13,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const [showTermsPage, setShowTermsPage] = useState(false);
-  const [showPrivacyPage, setShowPrivacyPage] = useState(false);
-
-  function toggleTerms() {
-    setShowTermsPage(!showTermsPage);
-  }
-
-  function togglePrivacy() {
-    setShowPrivacyPage(!showPrivacyPage);
-  }
-
   return (
     <section className="w-full h-auto max-w-[1250px] m-auto laptop:max-w-[1100px] tablet:max-w-[900px]">
       <h2 className="mt-32 text-center text-xl mb-2 mobile:px-10 mobile:py-5 mobile:mt-20 mobile:mb-2">
