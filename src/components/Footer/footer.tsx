@@ -4,7 +4,12 @@ import FooterIcons from "./footerIcons";
 export default function Footer() {
   return (
     <>
-      <div className="flex items-center gap-1">
+      <nav className="w-full bg-primary/[0.4] h-20 flex items-center justify-between">
+        <NavigationLogo className="mobile:w-12 mobile:h-12" />
+
+        <FooterIcons />
+      </nav>
+      <div className="flex items-center justify-center bg-primary/[0.4] gap-1 pb-2">
         <svg
           fill="#000000"
           height="13px"
@@ -35,11 +40,6 @@ export default function Footer() {
           RnR Automotive. All rights reserved.
         </p>
       </div>
-      <nav className="w-full bg-primary/[0.4] h-20 flex items-center justify-between">
-        <NavigationLogo className="mobile:w-12 mobile:h-12" />
-
-        <FooterIcons />
-      </nav>
     </>
   );
 }

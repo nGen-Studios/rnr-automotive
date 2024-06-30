@@ -32,7 +32,7 @@ export default function Contact() {
   }
 
   return (
-    <main className="border-4 rounded-lg border-primary w-2/3 h-auto tablet:mb-10 tablet:w-1/2 mobile:w-2/3">
+    <main className="border-4 rounded-lg border-primary w-2/3 h-auto tablet:mb-10 tablet:w-1/2 mobile:w-11/12">
       <form onSubmit={handleSubmit} className="p-4">
         <div className="flex items-center justify-between gap-5 tablet:flex-col tablet:items-start tablet:gap-0">
           <div className="w-1/2 tablet:w-full">
@@ -118,7 +118,7 @@ export default function Contact() {
           <BookingButton
             disabled={showSuccessMessage ? true : false}
             type="submit"
-            className="mr-5 tablet:p-5"
+            className="mr-0 tablet:p-5 tablet:mr-0 "
           >
             Send message
           </BookingButton>

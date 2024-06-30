@@ -5,9 +5,11 @@ import { useState } from "react";
 
 import NavigationItems from "./NavigationItems";
 import BookingButton from "./BookingButton";
+import { usePathname } from "next/navigation";
 
 export default function NavigationItemWrapper() {
   const [openMenu, setOpenMenu] = useState(false);
+  const pathName = usePathname();
 
   function toggleHandler() {
     setOpenMenu(!openMenu);
@@ -18,9 +20,9 @@ export default function NavigationItemWrapper() {
       <ul className="flex items-center justify-evenly">
         <NavigationItems className="tablet:hidden" />
         <li>
-          {!openMenu && (
+          {!openMenu && !pathName.includes("contact") && (
             <Link href="/contact">
-              <BookingButton onClick={toggleHandler} />
+              <BookingButton />
             </Link>
           )}
         </li>
@@ -36,13 +38,15 @@ export default function NavigationItemWrapper() {
             </button>
           )}
           {openMenu && (
-            <button onClick={toggleHandler}>
+            <button
+              className="absolute top-5 right-5 z-10"
+              onClick={toggleHandler}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
                 height="30"
                 viewBox="0 0 24 24"
-                className="absolute top-5 right-5"
               >
                 <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
               </svg>
@@ -53,12 +57,14 @@ export default function NavigationItemWrapper() {
       {openMenu && (
         <div
           onClick={toggleHandler}
-          className="flex flex-col items-center justify-center w-56 bg-primary/[0.6] absolute top-20 right-0"
+          className="fixed top-0 left-0  w-full h-full bg-primary"
         >
-          <NavigationItems className="my-5 mr-0" />
-          <Link href="/contact">
-            <BookingButton className="mb-5 tablet:mr-0" />
-          </Link>
+          <div className="flex flex-col items-center justify-start mt-16">
+            <NavigationItems className="text-4xl my-2 mr-0" />
+            <Link href="/contact">
+              <BookingButton className="mt-5 mr-auto tablet:!mx-auto" />
+            </Link>
+          </div>
         </div>
       )}
     </>

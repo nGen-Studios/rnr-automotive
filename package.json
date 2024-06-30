@@ -10,9 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "firebase": "^10.12.2",
-    "firebase-admin": "^12.2.0",
-    "googleapis": "^140.0.0",
     "next": "14.2.3",
     "nodemailer": "^6.9.14",
     "react": "^18",
