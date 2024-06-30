@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "RNR Automotive Privacy Policy",
+  keywords:
+    "car, truck, service, servicing, repairs, affordable, vaal, deneysville, meyerton, directions",
+};
+
 export default function PrivacyPolicy() {
   return (
     <div className="w-full h-auto bg-primary mt-20 py-5">

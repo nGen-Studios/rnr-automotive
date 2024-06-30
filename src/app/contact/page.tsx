@@ -1,11 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 
 import SendMessage from "@/components/ContactPage/sendMessage";
 import OurDetail from "@/components/ContactPage/ourDetail";
 import GoogleMaps from "@/components/ContactPage/googleMaps";
+
+export const metadata: Metadata = {
+  title: "RNR Automotive Contact Info",
+  description: "Contact us today for a quote",
+  keywords:
+    "car, truck, service, servicing, repairs, affordable, vaal, deneysville, meyerton, directions",
+};
 
 export default function ContactPage() {
   const [showTermsPage, setShowTermsPage] = useState(false);
