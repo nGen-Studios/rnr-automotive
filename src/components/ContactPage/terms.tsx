@@ -36,13 +36,13 @@ export default function Terms({
 
       {showTerms && (
         <div className="w-full h-auto bg-primary mt-24 pb-5 mb-5">
-          <div className="flex items-center justify-between mx-12 pt-10 mb-10">
-            <h1 className="w-11/12 text-center text-4xl py-3">
+          <div className="flex items-center justify-evenly mx-12 pt-10 mb-10 tablet:mx-5">
+            <h1 className="w-5/6 text-center text-4xl tablet:w-4/5 mobile:w-3/4">
               Terms and Conditions
             </h1>
             <button
               onClick={termsClick}
-              className="w-1/12 text-center text-xl bg-secondary py-3 rounded-full text-white"
+              className="w-1/6 text-center text-xl bg-secondary py-3 rounded-full text-white laptop:px-5 tablet:w-1/5 mobile:w-1/4"
             >
               Back
             </button>

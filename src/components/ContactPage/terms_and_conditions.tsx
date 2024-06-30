@@ -154,7 +154,7 @@ export function TermsAndConditions() {
       <ol className="mb-10">
         <h3 className="text-xl mb-2">4. Warranties</h3>
         <li className="mb-2">
-          4.1. I have been informed that the ASR only uses genuine parts where
+          4.1. I have been informed that the ASR uses genuine parts where
           possible and availability of such ,more cost effective
           &quot;aftermarket&quot; parts can be used and these parts have its own
           warranty as the third party suppliers terms and conditions in carrying
