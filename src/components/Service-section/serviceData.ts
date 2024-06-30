@@ -14,7 +14,7 @@ export const serviceItemData = [
     lists: ["Services", "Breaks", "Clutches", "Minor repairs"],
   },
   {
-    name: "Trucks 5t > smaller",
+    name: "Trucks 5 tons & smaller",
     image: truck,
     lists: ["Services", "Breaks", "Clutches", "Minor repairs"],
   },
