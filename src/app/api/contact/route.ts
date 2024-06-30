@@ -54,6 +54,7 @@ export async function POST(request: any) {
       accessToken: process.env.NEXT_PUBLIC_ACCESS_TOKEN,
     },
   });
+  console.log(process.env.NEXT_PUBLIC_EMAIL);
 
   try {
     const mail = await transporter.sendMail({
@@ -76,6 +77,16 @@ export async function POST(request: any) {
       { status: 200 }
     );
   } catch (error) {
+    console.log({
+      auth: {
+        type: "OAuth2",
+        user: process.env.NEXT_PUBLIC_EMAIL,
+        clientId: process.env.NEXT_PUBLIC_CLIENT_ID,
+        clientSecret: process.env.NEXT_PUBLIC_CLIENT_SECRET,
+        refreshToken: process.env.NEXT_PUBLIC_REFRESH_TOKEN,
+        accessToken: process.env.NEXT_PUBLIC_ACCESS_TOKEN,
+      },
+    });
     console.log(error);
     return NextResponse.json(
       { message: "COULD NOT SEND MESSAGE" },
