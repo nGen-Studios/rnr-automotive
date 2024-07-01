@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "RNR Automotive",
-  description: "Your best friend in verchile servicing",
+  description: "Your best friend in vehicle servicing",
   keywords:
     "car, truck, service, servicing, repairs, affordable, vaal, deneysville, meyerton, directions",
 };
