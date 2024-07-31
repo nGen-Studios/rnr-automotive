@@ -1,4 +1,4 @@
-import { NextResponse, NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 const nodemailer = require("nodemailer");
 
 // Handles POST requests to /api
@@ -15,7 +15,7 @@ export async function POST(request: any) {
   async function sendData() {
     try {
       const response = await fetch(
-        "https://rnr-automotives-default-rtdb.firebaseio.com/emails.json",
+        `${process.env.NEXT_PUBLIC_DATABASE_URL}/emails.json`,
         {
           method: "POST",
           headers: {

@@ -21,21 +21,20 @@ export default function ReviewSection() {
 
   async function getData() {
     try {
-      const response = await fetch(
-        "https://rnr-automotives-default-rtdb.firebaseio.com/reviews.json",
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch("/api/reviews", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
 
       const responseData = await response.json();
+
+      console.log(responseData);
 
       if (responseData) {
         setShowReview(true);

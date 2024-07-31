@@ -88,7 +88,7 @@ export default function Contact() {
           autoComplete="email"
           name="email"
           type="email"
-          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           placeholder="someone@gmail.com"
           className="w-full h-8 bg-primary pl-2 font-sans mb-5 placeholder-black/[0.6]"
         />
