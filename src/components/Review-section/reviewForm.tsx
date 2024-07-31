@@ -58,18 +58,15 @@ export default function ReviewForm({
     event.preventDefault();
 
     try {
-      const response = await fetch(
-        "https://rnr-automotives-default-rtdb.firebaseio.com/reviews.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(reviewFormData),
-        }
-      );
+      const response = await fetch("/api/reviews", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(reviewFormData),
+      });
 
-      if (!response.ok) {
+      if (response.status !== 200) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
 
