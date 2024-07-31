@@ -6,16 +6,16 @@ export const serviceItemData = [
   {
     name: "Cars",
     image: car,
-    lists: ["Services", "Breaks", "Minor repairs"],
+    lists: ["Services", "Brakes", "Minor repairs"],
   },
   {
     name: "Bakkies",
     image: bakkie,
-    lists: ["Services", "Breaks", "Clutches", "Minor repairs"],
+    lists: ["Services", "Brakes", "Clutches", "Minor repairs"],
   },
   {
     name: "Trucks 5 tons & smaller",
     image: truck,
-    lists: ["Services", "Breaks", "Clutches", "Minor repairs"],
+    lists: ["Services", "Brakes", "Clutches", "Minor repairs"],
   },
 ];
