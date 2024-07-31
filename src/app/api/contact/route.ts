@@ -70,7 +70,7 @@ export async function POST(request: any) {
             `,
     });
 
-    sendData();
+    await sendData();
 
     return NextResponse.json(
       { message: "Success: email was sent", formData: { ...formData } },
