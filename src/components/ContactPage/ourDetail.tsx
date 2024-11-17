@@ -13,7 +13,7 @@ export default function OurDetail() {
           Email address:
         </label>
         <p className="font-sans text-xl w-1/2 break-words mobile:text-lg">
-          rnr2service@gmail.com
+          services@rnrautomotive.co.za
         </p>
       </div>
       <div className="flex items-start justify-between mb-2 w-full gap-10 mobile:flex-col mobile:items-center mobile:mb-5 mobile:text-center mobile:gap-0">
