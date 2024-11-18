@@ -15,7 +15,7 @@ export default function Banner() {
           <p className="text-2xl mobile:text-base ">
             Fast, Friendly Service — Right to Your Door, Within 100km!
           </p>
-          <p className="text-center text-sm">T & C's apply</p>
+          <p className="text-center text-sm">T & C&apos;s apply</p>
         </div>
       </div>
     </section>
