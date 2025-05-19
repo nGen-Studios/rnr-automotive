@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation/Navigation";
 import "./globals.css";
 import Footer from "@/components/Footer/footer";
 
-const inter = localFont({
+const myFont = localFont({
   src: "../public/assets/fonts/Bubblegum.ttf",
   variable: "--customFont",
 });
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-customFont ${inter.variable}`}>
+      <body className={`font-customFont ${myFont.className}`}>
         <Navigation />
         {children}
         <Footer />
