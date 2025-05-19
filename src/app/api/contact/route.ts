@@ -43,7 +43,7 @@ export async function POST(request: any) {
   async function sendEmail() {
     // Create a transporter object using SMTP
     const transporter = nodemailer.createTransport({
-      host: process.env.NEXT_PUBLIC_HOST_SMPT, // Replace with your SMTP server
+      host: process.env.NEXT_PUBLIC_HOST_SMTP, // Replace with your SMTP server
       port: 465, // Use 465 for secure connection or 587 for TLS
       secure: true, // Set to true if using port 465
       auth: {
