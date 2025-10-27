@@ -21,7 +21,7 @@ export default function OurDetail() {
           address:
         </label>
         <p className="font-sans text-xl w-1/2 mobile:text-lg">
-          15 Island street, Deneysville, 1932
+          17 Island St, deneysville, Deneysville, 1932
         </p>
       </div>
     </div>
