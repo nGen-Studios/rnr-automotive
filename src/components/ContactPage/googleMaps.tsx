@@ -5,7 +5,7 @@ export default function GoogleMaps() {
         <div className="gmap_canvas">
           <iframe
             id="gmap_canvas"
-            src="https://maps.google.com/maps?q=15+Island+street%2C+Deneysville%2C+1932&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=17+Island+street%2C+Deneysville%2C+1932&t=&z=13&ie=UTF8&iwloc=&output=embed"
             className="w-full h-[550px] tablet:h-[400px]"
           ></iframe>
           <a href="https://online-timer.me"></a>
